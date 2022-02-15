@@ -147,6 +147,7 @@ body
   cursor: pointer;
   text-decoration: under;
 }
+
 @media only screen and (max-width: 1200px) {
   .main-card-container
   {
@@ -172,8 +173,12 @@ body
      gap:15px;
      padding:0;
      margin:0;
+     cursor: pointer; 
+   }
+   .footer-items li:hover
+   {
+     text-decoration:underline;
      cursor: pointer;
-     text-decoration: under;
    }
    .footer-icons
    {
@@ -187,17 +192,24 @@ body
 }
 @media only screen and (max-width: 768px)
 {
+  .main-card-container
+  {
+    align-items:flex-start;
+  }
   .footer-container
   {
     min-height:1100px;
-    padding: 0px 0px 0px 180px;
+    padding: 0px 0px 0px 60px;
   }
   .footer-items
   {
     flex-direction: column;
-    cursor: pointer;
-    text-decoration: under;
   }
+  .footer-items li:hover
+   {
+     text-decoration:underline;
+     cursor: pointer;
+   }
   .footer-icons
   {
     justify-content:flex-start;
@@ -212,9 +224,18 @@ body
   {
     text-align: center;
   }
+  .footer-items li:hover
+  {
+    text-decoration:underline;
+    cursor: pointer;
+  }
 }
 @media only screen and (max-width:500px)
 {
+  .main-card-container
+  {
+    align-items: center;
+  }
   .footer-container
   {
     padding: 0px 0px 0px 20px;
@@ -223,11 +244,10 @@ body
   {
     display:none;
   }
-  .footer-icons
-  {
-    cursor: pointer;
-    text-decoration: under;
-    cursor: pointer;
-     text-decoration: under;
-  }
+  .footer-items li:hover
+   {
+     text-decoration:underline;
+     cursor: pointer;
+   }
+
 }
