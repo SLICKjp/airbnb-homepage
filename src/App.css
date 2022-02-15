@@ -4,6 +4,12 @@
   padding:0;
   box-sizing: border-box;
 }
+html, body
+{
+  width:100%;
+  height:100%;
+  overflow-x: hidden;
+}
 body
 {
   font-family: 'Poppins', sans-serif;
@@ -23,19 +29,17 @@ body
 /*Hero Section */
 .hero
 {
-  padding: 30px;
+  padding: 30px 55px;
   display:flex;
   flex-direction: column;
- 
 }
  .group-image
 {
-  max-width:100%;
+   max-width:100%;
   align-self: center;
 }
 .hero-header,.hero-text
 {
-  
   margin-top:30px;
   line-height:1;
 }
@@ -53,17 +57,17 @@ body
 /*Card Container*/
 .card-container
 {
-  padding:30px;
+  padding:30px 58px;
   font-size:12px;
   display:flex;
   flex-direction:column;
-  justify-content: start;
+  justify-content:space-around;
   
 }
 .card-image
 {
   height:300px;
-  width:400px;
+  width:390px;
   border-radius:9px;
 }
 
@@ -75,7 +79,7 @@ body
 {
   display:flex;
   flex-direction: row;
-  gap:10px;
+  
 }
 .card-stats
 {
@@ -93,7 +97,56 @@ body
   font-size: 15px;
 }
 
-
+/* Footer */
+.footer-container
+{
+  background-color: #F7F7F7;
+  width:100%;
+  color:black;
+  height:350px;
+  display:flex;
+  justify-content: space-evenly;
+  padding: 35px 150px 0px 0px;
+}
+.footer-items li
+{
+  list-style: none;
+  font-weight: 200;
+  font-size:14px;
+  margin-top: 10px;
+}
+.footer-items li:hover
+{
+  text-decoration:underline;
+  cursor: pointer;
+}
+.footer-data
+{
+  font-weight: 200;
+  font-size:14px;
+  display:flex;
+}
+.footer-data p
+{
+  padding: 20px 10px 0px 0px;
+}
+.footer-data p:hover
+{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-icons
+{
+  font-size:20px;
+  display:flex;
+  justify-content: space-between;
+  padding: 20px 0px 0px 0px;
+}
+.footer-icons:hover
+{
+  cursor: pointer;
+  text-decoration: under;
+}
 @media only screen and (max-width: 1200px) {
   .main-card-container
   {
@@ -101,10 +154,80 @@ body
     width:100%;
     align-items: center;
   }
+  .footer-container
+   {
+      min-height:500px;
+      padding-top:0;
+      flex-direction: column;
+      padding: 0px 0px 0px 50px;
+   }
+   .footer-title, .footer-items li
+   {
+     font-size:14px;
+   }
+   .footer-items
+   {
+     display:flex;
+     justify-content:start;
+     gap:15px;
+     padding:0;
+     margin:0;
+     cursor: pointer;
+     text-decoration: under;
+   }
+   .footer-icons
+   {
+     width:100%;
+     display:flex;
+     justify-content:center;
+     gap:55px;
+     font-size:20px;
+     
+   }
 }
+@media only screen and (max-width: 768px)
+{
+  .footer-container
+  {
+    min-height:1100px;
+    padding: 0px 0px 0px 180px;
+  }
+  .footer-items
+  {
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: under;
+  }
+  .footer-icons
+  {
+    justify-content:flex-start;
+    gap:35px;
+    
+  }
+ 
+}
+
 @media only screen and (max-width:400px) {
   .main-text,.card-stats
   {
     text-align: center;
+  }
+}
+@media only screen and (max-width:500px)
+{
+  .footer-container
+  {
+    padding: 0px 0px 0px 20px;
+  }
+  .footer-data
+  {
+    display:none;
+  }
+  .footer-icons
+  {
+    cursor: pointer;
+    text-decoration: under;
+    cursor: pointer;
+     text-decoration: under;
   }
 }

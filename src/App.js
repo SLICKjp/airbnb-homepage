@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Card from './components/Card';
 import {cards} from './components/Cards';
+import Footer from './components/Footer';
+
 
 function App() {
   console.log(cards);
@@ -25,6 +27,7 @@ function App() {
       <div className="main-card-container">
          {cardData}
          </div>
+       <Footer/>
     </div>
   );
 }
